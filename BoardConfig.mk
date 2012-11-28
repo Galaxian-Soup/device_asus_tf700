@@ -14,11 +14,14 @@
 # limitations under the License.
 #
 
+# Default value, if not overridden else where.
+#BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/asus/tf700t/bluetooth
+
 USE_PROPRIETARY_AUDIO_EXTENSIONS := true
 BOARD_USES_GENERIC_AUDIO := false
 USE_CAMERA_STUB := false
-BOARD_USES_ALSA_AUDIO := false
-BOARD_USES_TINY_AUDIO_HW := true
+#BOARD_USES_ALSA_AUDIO := false
+#BOARD_USES_TINY_AUDIO_HW := true
 
 # inherit from the proprietary version
 -include vendor/asus/tf700t/BoardConfigVendor.mk
@@ -61,8 +64,8 @@ BOARD_USE_SKIA_LCDTEXT := true
 BOARD_NO_ALLOW_DEQUEUE_CURRENT_BUFFER := true
 
 # Bluetooth
-BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_BCM := true
+#BOARD_HAVE_BLUETOOTH := true
+#BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Support for dock battery
 TARGET_HAS_DOCK_BATTERY := true
